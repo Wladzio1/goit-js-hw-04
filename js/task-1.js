@@ -1,7 +1,8 @@
 function isEnoughCapacity(products, containerSize) {
   let totalPrice = 0;
+  let values = Object.values(products);
 
-  for (let onePrice of products.values) {
+  for (let onePrice of values) {
     totalPrice += onePrice;
   }
 
